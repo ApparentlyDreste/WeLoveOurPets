@@ -1,3 +1,3 @@
 # WeLoveOurPets
-FrontEnd > API > Lambda > DynamoDB/S3 Demoy
+FrontEnd > API > Lambda > DynamoDB/S3 Demo
 
