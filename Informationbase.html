@@ -1,0 +1,44 @@
+<!doctype html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>We Love Our Pets!</title>
+  <link rel="stylesheet" href="cajita.css">
+  <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+<body>
+  <header>
+    <button id="theme-switch">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80Zm0-720q-44 0-81.5 15.5T332-742l-58-56q41-38 93.5-60T480-880q125 0 212.5 87.5T780-580q0 71-25 121.5T698-376l-56-56q21-23 39.5-59t18.5-89q0-92-64-156t-156-64Zm368 688-57 57-265-265H330q-69-41-109.5-110T180-580q0-20 2.5-39t7.5-37L56-792l56-56 736 736ZM354-400h92L260-586v6q0 54 24.5 101t69.5 79Zm-6-98Zm134-94Zm164 312v80H320v-80h326Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-200v-80h320v80H320Zm10-120q-69-41-109.5-110T180-580q0-125 87.5-212.5T480-880q125 0 212.5 87.5T780-580q0 81-40.5 150T630-320H330Z"/></svg>
+    </button>
+    <header>
+    <h1>We Love Our Pets!</h1>
+    </header>
+
+    <section class="auth-section">
+      <!-- Aquí irá el botón de inicio de sesión con AWS Cognito -->
+      <p>[Login con Cognito]</p>
+    </section>
+
+    <section class="form-container">
+      <h3>Upload your pet picture!</h3>
+      <form id="uploadForm">
+        <input type="file" id="petImage" accept="image/*" required>
+        <img id="preview" src="" style="display:none; max-width:100%; margin-top:10px;">
+        <input type="text" id="ownerName" placeholder="Owner's name" required>
+        <input type="text" id="petName" placeholder="Pet's name" required>
+        <input type="text" id="petAge" placeholder="Pet's age" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="gallery" id="photoGallery">
+      <!-- Aquí se agregan dinámicamente las imágenes de las mascotas -->
+      <img src="https://placedog.net/400/300?id=235">
+      <img src="https://placedog.net/400/300?id=2">
+      <img src="https://placedog.net/400/300?id=119">
+    </section>
+</body>
+</html>
